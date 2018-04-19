@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CMPushNotificationService_Example' do
+  pod 'CMPushNotificationService', :path => '../'
+
+  target 'CMPushNotificationService_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
