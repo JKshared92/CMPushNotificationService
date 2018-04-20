@@ -7,6 +7,7 @@
 //
 
 #import "CMViewController.h"
+#import <CMPushNotificationService/CMPushNotificationService.h>
 
 @interface CMViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    /**在视图加载完成开始执行推送*/
+    [[CMPushNotificationService sharedManager] applicationDidLoad];
 }
 
 - (void)didReceiveMemoryWarning
