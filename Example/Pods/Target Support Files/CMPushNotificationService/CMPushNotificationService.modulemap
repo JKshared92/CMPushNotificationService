@@ -1,0 +1,6 @@
+framework module CMPushNotificationService {
+  umbrella header "CMPushNotificationService-umbrella.h"
+
+  export *
+  module * { export * }
+}

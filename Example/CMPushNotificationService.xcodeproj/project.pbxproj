@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5742148E2088885E00AF3403 /* CMPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742148D2088885E00AF3403 /* CMPushManager.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		4BF22638CC5E3B5E66E662D1 /* Pods-CMPushNotificationService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMPushNotificationService_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMPushNotificationService_Example/Pods-CMPushNotificationService_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5742148C2088885E00AF3403 /* CMPushManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPushManager.h; sourceTree = "<group>"; };
+		5742148D2088885E00AF3403 /* CMPushManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPushManager.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CMPushNotificationService_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMPushNotificationService_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,9 +64,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FF43525FE748DF84F7CE4EA /* Pods-CMPushNotificationService_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMPushNotificationService_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMPushNotificationService_Tests/Pods-CMPushNotificationService_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C2021B58D5E9F892C4B15508 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E0091D56C91E814647E4D89B /* CMPushNotificationService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CMPushNotificationService.podspec; path = ../CMPushNotificationService.podspec; sourceTree = "<group>"; };
-		E59EEC5F31516795193E8813 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C2021B58D5E9F892C4B15508 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E0091D56C91E814647E4D89B /* CMPushNotificationService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CMPushNotificationService.podspec; path = ../CMPushNotificationService.podspec; sourceTree = "<group>"; };
+		E59EEC5F31516795193E8813 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E8988F7FFAABC89BD56621E7 /* Pods-CMPushNotificationService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMPushNotificationService_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMPushNotificationService_Tests/Pods-CMPushNotificationService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9231E149A3314E6D71BB644 /* Pods-CMPushNotificationService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMPushNotificationService_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMPushNotificationService_Example/Pods-CMPushNotificationService_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F2BA91625F052B97DB34C6F2 /* Pods_CMPushNotificationService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMPushNotificationService_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +143,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				5742148C2088885E00AF3403 /* CMPushManager.h */,
+				5742148D2088885E00AF3403 /* CMPushManager.m */,
 			);
 			name = "Example for CMPushNotificationService";
 			path = CMPushNotificationService;
@@ -207,7 +212,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				16E43E7F94CA2DA5BD81D830 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +251,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = comma;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = U3B3DS3TJJ;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -294,24 +301,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16E43E7F94CA2DA5BD81D830 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CMPushNotificationService_Example/Pods-CMPushNotificationService_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CMPushNotificationService/CMPushNotificationService.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CMPushNotificationService.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CMPushNotificationService_Example/Pods-CMPushNotificationService_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9AA1C6BDED35C9670CB408A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* CMAppDelegate.m in Sources */,
+				5742148E2088885E00AF3403 /* CMPushManager.m in Sources */,
 				6003F5A7195388D20070C39A /* CMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -485,6 +475,7 @@
 			baseConfigurationReference = 4BF22638CC5E3B5E66E662D1 /* Pods-CMPushNotificationService_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U3B3DS3TJJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMPushNotificationService/CMPushNotificationService-Prefix.pch";
 				INFOPLIST_FILE = "CMPushNotificationService/CMPushNotificationService-Info.plist";
@@ -500,6 +491,7 @@
 			baseConfigurationReference = E9231E149A3314E6D71BB644 /* Pods-CMPushNotificationService_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U3B3DS3TJJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMPushNotificationService/CMPushNotificationService-Prefix.pch";
 				INFOPLIST_FILE = "CMPushNotificationService/CMPushNotificationService-Info.plist";

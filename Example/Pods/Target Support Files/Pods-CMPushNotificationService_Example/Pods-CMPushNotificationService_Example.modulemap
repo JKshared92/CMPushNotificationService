@@ -1,0 +1,6 @@
+framework module Pods_CMPushNotificationService_Example {
+  umbrella header "Pods-CMPushNotificationService_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

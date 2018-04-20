@@ -1,0 +1,35 @@
+PODS:
+  - CMPushNotificationService (1.0.0):
+    - CMPushNotificationService/Core (= 1.0.0)
+    - CMPushNotificationService/JPushLib (= 1.0.0)
+    - CMPushNotificationService/XGLib (= 1.0.0)
+  - CMPushNotificationService/Core (1.0.0):
+    - CMPushNotificationService/JPushLib
+    - CMPushNotificationService/XGLib
+  - CMPushNotificationService/JPushLib (1.0.0):
+    - JPush
+  - CMPushNotificationService/XGLib (1.0.0)
+  - JCore (1.1.9)
+  - JPush (3.0.9):
+    - JCore (~> 1.1.7)
+
+DEPENDENCIES:
+  - CMPushNotificationService (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - JCore
+    - JPush
+
+EXTERNAL SOURCES:
+  CMPushNotificationService:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CMPushNotificationService: 30a8a335e22715ea81d11ac0dac0a4ce99532243
+  JCore: 27598485098d0db99d2812cba048003457d08cfb
+  JPush: 003d9eaef8ba2df76de32573d0c8aa62b92b3c82
+
+PODFILE CHECKSUM: 9f5e8d35f4036ff24dfc5c8524132cf81cc886ce
+
+COCOAPODS: 1.5.0
