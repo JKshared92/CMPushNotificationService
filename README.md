@@ -31,7 +31,9 @@ CMPushNotificationService is available under the MIT license. See the LICENSE fi
 ## 使用方法
 
 * 创建一个NSOjbect类，遵循CMPushNotificationHandler协议 (例：CMPushManager，下面均使用这个类)
+
 * 在didFinishLaunchingWithOptions里面注册推送服务
+
 `
 /**极光*/
 JPushConfig *config = [JPushConfig configWithAppKey:@"" channel:@"" apsForProduction:YES isDebug:YES];
@@ -43,8 +45,10 @@ JPushConfig *config = [JPushConfig configWithAppKey:@"" channel:@"" apsForProduc
 `
 
 * 在视图加载完成的地方开始推送
+
 `/**在视图加载完成开始执行推送*/
 [[CMPushNotificationService sharedManager] applicationDidLoad];
 `
+
 * 在CMPushManager.m 实现协议方法即可
 
