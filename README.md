@@ -34,12 +34,15 @@ CMPushNotificationService is available under the MIT license. See the LICENSE fi
 
 * 在didFinishLaunchingWithOptions里面注册推送服务
 
-`
-/**极光*/
+`/**极光*/
+
 JPushConfig *config = [JPushConfig configWithAppKey:@"" channel:@"" apsForProduction:YES isDebug:YES];
 
+
 /**信鸽*/
-//    XGPushConfig *config = [XGPushConfig configWithAppID:123 appKey:@"" isDebug:YES];
+
+//XGPushConfig *config = [XGPushConfig configWithAppID:123 appKey:@"" isDebug:YES];
+
 
 [[CMPushNotificationService sharedManager] configurePushWithLaunchOptions:launchOptions pushConfig:config pushNotificationHandler:[CMPushManager new]];
 `
@@ -47,6 +50,7 @@ JPushConfig *config = [JPushConfig configWithAppKey:@"" channel:@"" apsForProduc
 * 在视图加载完成的地方开始推送
 
 `/**在视图加载完成开始执行推送*/
+
 [[CMPushNotificationService sharedManager] applicationDidLoad];
 `
 
