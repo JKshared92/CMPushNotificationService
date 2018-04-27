@@ -1,6 +1,6 @@
 {
   "name": "CMPushNotificationService",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "summary": "对推送服务的封装",
   "homepage": "https://github.com/JKshared92/CMPushNotificationService",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/JKshared92/CMPushNotificationService.git",
-    "tag": "1.0.1"
+    "tag": "1.0.2"
   },
   "requires_arc": true,
   "static_framework": true,

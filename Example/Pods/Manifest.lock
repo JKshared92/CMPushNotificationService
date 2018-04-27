@@ -1,14 +1,14 @@
 PODS:
-  - CMPushNotificationService (1.0.1):
-    - CMPushNotificationService/Core (= 1.0.1)
-    - CMPushNotificationService/JPushLib (= 1.0.1)
-    - CMPushNotificationService/XGLib (= 1.0.1)
-  - CMPushNotificationService/Core (1.0.1):
+  - CMPushNotificationService (1.0.2):
+    - CMPushNotificationService/Core (= 1.0.2)
+    - CMPushNotificationService/JPushLib (= 1.0.2)
+    - CMPushNotificationService/XGLib (= 1.0.2)
+  - CMPushNotificationService/Core (1.0.2):
     - CMPushNotificationService/JPushLib
     - CMPushNotificationService/XGLib
-  - CMPushNotificationService/JPushLib (1.0.1):
+  - CMPushNotificationService/JPushLib (1.0.2):
     - JPush
-  - CMPushNotificationService/XGLib (1.0.1)
+  - CMPushNotificationService/XGLib (1.0.2)
   - JCore (1.1.9)
   - JPush (3.0.9):
     - JCore (~> 1.1.7)
@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CMPushNotificationService: 3251ebbe39acfb922220808bae1db1483d1db898
+  CMPushNotificationService: d67019e811ca34c999d2368c5c48167e514f6e69
   JCore: 27598485098d0db99d2812cba048003457d08cfb
   JPush: 003d9eaef8ba2df76de32573d0c8aa62b92b3c82
 
