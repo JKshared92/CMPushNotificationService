@@ -306,11 +306,6 @@
     
     [self.remoteNotifications addObject:notification.request.content.userInfo.description];
     
-    if ([self.pushNotificationHandler respondsToSelector:@selector(pushWillPresentNotification:withCompletionHandler:)]) {
-        [self.pushNotificationHandler pushWillPresentNotification:notification withCompletionHandler:completionHandler];
-        return;
-    }
-    
     if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive) {
         if (@available(iOS 10.0, *)) {
             completionHandler(UNNotificationPresentationOptionAlert|UNNotificationPresentationOptionSound);
@@ -323,6 +318,11 @@
         } else {
             // Fallback on earlier versions
         }
+    }
+    
+    if ([self.pushNotificationHandler respondsToSelector:@selector(pushWillPresentNotification:withCompletionHandler:)]) {
+        [self.pushNotificationHandler pushWillPresentNotification:notification withCompletionHandler:completionHandler];
+        return;
     }
 }
 
