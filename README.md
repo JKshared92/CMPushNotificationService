@@ -20,10 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'CMPushNotificationService'
 ```
 
-## Author
-
-comma, 506702341@qq.com
-
 ## License
 
 CMPushNotificationService is available under the MIT license. See the LICENSE file for more info.
@@ -38,10 +34,17 @@ CMPushNotificationService is available under the MIT license. See the LICENSE fi
 [[CMPushNotificationService sharedManager] configurePushWithLaunchOptions:launchOptions pushConfig:config pushNotificationHandler:[CMPushManager new]];
 `
 
+* 在需要的地方注册推送
+
+`[[CMPushNotificationService sharedManager] registerRemoteNotification];
+`
+
 * 在视图加载完成的地方开始推送
 
 `[[CMPushNotificationService sharedManager] applicationDidLoad];
 `
 
 * 在CMPushManager.m 实现协议方法即可
+
+* 具体使用方法可参考Example
 
