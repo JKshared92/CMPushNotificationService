@@ -338,7 +338,6 @@
                 completionHandler((NSInteger)notificateOptions);
             }
         }];
-        return;
     }
     
     if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive) {

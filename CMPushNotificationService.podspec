@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'CMPushNotificationService'
-s.version          = '1.0.3'
+s.version          = '1.0.4'
 s.summary          = '对推送服务的封装'
 
 s.homepage         = 'https://github.com/JKshared92/CMPushNotificationService'
